@@ -7,8 +7,8 @@ namespace Tyuiu.SaigafarovBI.Sprint0.Task2.V0.Test
         [TestMethod]
         public void CheckMessageValid()
         {
-            string name = "Богдан";
-            string res = DataService.GetMessage(name);
+            var name = "Богдан";
+            var res = DataService.GetMessage(name);
 
             Assert.AreEqual("Привет, Богдан", res);
         }
